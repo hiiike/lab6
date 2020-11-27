@@ -1,0 +1,3 @@
+﻿  test_lab6.1rec.cpp
+F:\labs\lab6.1_rec\test_lab6.1rec\test_lab6.1rec.cpp(17,21): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  test_lab6.1rec.vcxproj -> F:\labs\lab6.1_rec\Debug\test_lab6.1rec.dll
