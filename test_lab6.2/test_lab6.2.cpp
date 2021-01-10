@@ -4,18 +4,23 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace testlab62
+namespace testlab62rec
 {
-	TEST_CLASS(testlab62)
+	TEST_CLASS(testlab62rec)
 	{
 	public:
-		
+
 		TEST_METHOD(TestMethod1)
 		{
 			int c;
-			int a[2]{2 , 4};
-			c = Max(a, 2);
-			Assert::AreEqual(c, 4);
+			int b;
+			int q[4] = { 3, 50, 4, 9 };
+			int a[5] = { 1, 10, 2, 5, 11 };
+			b = Min(q, 4);
+			c = Max(a, 5);
+			Assert::AreEqual(c, 11);
+			Assert::AreEqual(b, 3);
 		}
 	};
 }
+
