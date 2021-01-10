@@ -1,2 +1,4 @@
 ﻿  test_lab6.2_rec.cpp
-  test_lab6.2_rec.vcxproj -> F:\labs\lab6.2_rec\Debug\test_lab6.2_rec.dll
+F:\labs\lab6.2_rec\lab6.2_rec\Source.cpp(26,9): error C2561: 'Max_r': function must return a value
+F:\labs\lab6.2_rec\lab6.2_rec\Source.cpp(22): message : see declaration of 'Max_r'
+F:\labs\lab6.2_rec\test_lab6.2_rec\test_lab6.2_rec.cpp(20,8): error C3861: 'Max': identifier not found
