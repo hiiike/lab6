@@ -13,9 +13,9 @@ namespace testlab61rec
 		TEST_METHOD(TestMethod1)
 		{
 			int c;
-			int r[21]{31,510,39,30,23,85,13,43,13,67,40,65,14,69,51,40,85,38,80,66,64};
-			c = Sum_r(r, 21, 2.);
-			Assert::AreEqual(c, 372);
+			int r[21]{46,75,45,12,53,51,28,65,27,67,76,11,24,45,26,59,87,18,76,37,15};
+			c = Sum_r(r, 21, 0);
+			Assert::AreEqual(c, 943);
 		}
 	};
 }

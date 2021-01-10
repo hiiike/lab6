@@ -25,7 +25,7 @@ int Count_r(int* b, const int size, int i) {
 	if (i == size) {
 		return 0;
 	}
-	if (b[i] % 2 == 0 && b[i] != 3) {
+	if (!(b[i] % 2 != 0 && b[i] == 3)) {
 		return Count_r(b, size, i + 1) + 1;
 	}
 	return Count_r(b, size, i + 1);
@@ -35,7 +35,7 @@ void Zero_r(int* b, const int size, int i) {
 	if (i == size) {
 		return;
 	}
-	if (b[i] % 2 == 0 && b[i] != 3) {
+	if (!(b[i] % 2 != 0 && b[i] == 3)) {
 		b[i] = 0;
 	}
 	Zero_r(b, size, i + 1);
@@ -45,7 +45,7 @@ int Sum_r(int* b, const int size, int i) {
 	if (i == size) {
 		return 0;
 	}
-	if (b[i] % 2 == 0 && b[i] != 3) {
+	if (!(b[i] % 2 != 0 && b[i] == 3)) {
 		return Sum_r(b, size, i + 1) + b[i];
 	}
 	return Sum_r(b, size, i + 1);
