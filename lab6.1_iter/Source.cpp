@@ -17,7 +17,7 @@ void Print(int* b, const int size) {
 int Count(int* b, const int size) {
 	int count = 0;
 	for (int i = 0; i < size; i++) {
-		if (b[i] % 2 == 0 && b[i] != 3) {
+		if (!(b[i] % 2 != 0 && b[i] == 3)) {
 			count++;
 		}	
 	}
@@ -26,14 +26,14 @@ int Count(int* b, const int size) {
 
 void Zero(int* b, const int size) {
 	for (int i = 0; i < size; i++)
-		if (b[i] % 2 == 0 && b[i] != 3)
+		if (!(b[i] % 2 != 0 && b[i] == 3))
 			b[i] = 0;
 }
 
 int Sum(int* b, const int size) {
 	int S = 0;
 	for (int i = 0; i < size; i++)
-		if (b[i] % 2 == 0 && b[i] != 3)
+		if (!(b[i] % 2 != 0 && b[i] == 3))
 			S += b[i];
 	return S;
 }
